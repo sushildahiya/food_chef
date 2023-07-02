@@ -1,0 +1,148 @@
+/* CSS for alignment and dimesions for meal image */
+.image-container {
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: rgb(208, 253, 135);
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  border: 5px solid black;
+  border-style: double;
+  border-radius: 10px;
+}
+
+/* Hidding the extra text when text exceeds outer container  */
+.name-container h3 {
+  text-overflow: hidden;
+}
+
+/* Background color for name, area, category and tags containers */
+.name-container,
+.area-container,
+.category-container,
+.tags-container {
+  border-radius: 10px;
+  background-color: rgb(208, 253, 135);
+}
+
+/* CSS for youtube container and its sub elements */
+.youtube-container {
+  border-radius: 20px;
+  height: 100%;
+  background-color: rgb(208, 253, 135);
+}
+
+.youtube-container a {
+  text-decoration: none;
+}
+
+.youtube-container a i {
+  color: rgb(229, 15, 15);
+}
+
+.youtube-container:hover {
+  background-color: rgb(223, 129, 129);
+}
+
+.youtube-content i {
+  font-size: 10em;
+}
+
+/* Instruction and ingredients container css */
+.instruction-container,
+.ingredient-container {
+  border-radius: 20px;
+  background-color: rgb(253, 233, 135);
+}
+
+.ingredient-container h4 {
+  display: block;
+  border-radius: 10px;
+  background-color: rgb(206, 225, 176);
+  padding: .2em;
+  margin: .2em;
+}
+
+/* Responsiveness CSS adjusting the containers for lower screen resolutions */
+@media screen and (min-width:768px) and (max-width :995px) {
+  .container {
+    margin: 1em;
+    padding: 0px;
+    width: 100vw;
+  }
+
+  .detail-container,
+  .instruction-ingredient-container {
+    width: 95vw;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width:765px) and (max-width :1200px) {
+  .image-container img {
+    height: 85%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width:720px) and (max-width :765px) {
+  .image-container img {
+    height: 90%;
+    object-fit: contain;
+  }
+
+  .container {
+    margin: 1em;
+    padding: 0px;
+    width: 100vw;
+  }
+
+  .detail-container,
+  .instruction-ingredient-container {
+    width: 95vw;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width :720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Below 520px making the image and infor containers in a column  */
+@media screen and (max-width :520px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav-bar {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .container {
+    width: 90vw;
+  }
+
+  .container,
+  .detail-container,
+  .instruction-ingredient-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  .image-container {
+    padding: .5em;
+  }
+
+}

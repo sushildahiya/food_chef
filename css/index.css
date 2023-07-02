@@ -1,0 +1,198 @@
+/* Common css class used for hidding elements */
+.hidden {
+  display: none !important;
+}
+/* Main body background color */
+main {
+  background-color: rgb(240, 248, 218);
+}
+/* Input box CSS to make edges circular radius */
+.input {
+  outline: 2px solid #FEBF00;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  transition: 0.25s;
+  border-radius: 20px;
+}
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+.container-fluid {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+/* Carousel CSS */
+.carousel {
+  background-color: rgb(161, 133, 80);
+}
+/* Dimensions of carsousel images */
+.carousel-inner img {
+  height: auto;
+  max-height: 100%;
+  width: 50vw;
+  max-width: 100%;
+  object-fit: contain;
+}
+.carousel-item img {
+  width: 80vw;
+  height:60vh;
+}
+/* Carousel image caption fonts css */
+.carousel-caption p,
+.carousel-caption h3 {
+  font-weight: bolder;
+  -webkit-text-stroke: 1px rgb(219, 219, 219);
+  font-family: arial;
+  color: rgb(0, 0, 0);
+}
+.carousel-caption p {
+  font-size: 1.6em;
+}
+
+/*Loader CSS*/
+.loader-container{
+  display: flex;
+  width: 90vw;
+  height:70vh;
+  justify-content: center;
+  align-items: center;
+}
+.loader{
+  align-self: center;
+}
+.loader {
+  --dim: 3rem;
+  width: var(--dim);
+  height: var(--dim);
+  position: relative;
+  animation: spin 2s linear infinite;
+}
+
+.loader .circle {
+  --color: #bdd56e;
+  --dim: 1.2rem;
+  width: var(--dim);
+  height: var(--dim);
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+}
+.loader .circle:nth-child(2),.loader .circle:nth-child(3){
+  --color: rgb(231, 189, 117);
+}
+.loader .circle:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.loader .circle:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.loader .circle:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.loader .circle:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+
+  20%, 25% {
+    transform: scale(1.3) rotate(90deg);
+  }
+
+  45%, 50% {
+    transform: scale(1) rotate(180deg);
+  }
+
+  70%, 75% {
+    transform: scale(1.3) rotate(270deg);
+  }
+
+  95%, 100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+/* Main body category data css */
+.categoryMeal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+}
+.meal-content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-evenly;
+  width:90vw;
+}
+/* Css for data when we don't have any meals with searched name */
+.no-data{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Category wise view more button css */
+.view-more-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  padding:.4em;
+}
+.view-more-container h4{
+  padding-top: .5em;
+}
+
+/* Responsiveness css */
+/* Handle the main body cards for different resolution */
+@media screen and (min-width:1170px) and (max-width :1430px){
+  .meal-content-container .card:nth-child(n+5){
+    display: none;
+  }
+}
+@media screen and (min-width:910px) and (max-width :1170px){
+  .meal-content-container .card:nth-child(n+4){
+    display: none;
+  }
+}
+@media screen and (min-width:646px) and (max-width :910px){
+  .meal-content-container .card:nth-child(n+3){
+    display: none;
+  }
+}
+@media screen and (min-width:384px) and (max-width :646px){
+  .meal-content-container .card:nth-child(n+2){
+    display: none;
+  }
+}
+@media screen and (max-width :384px){
+  .meal-content-container .card:nth-child(n+3){
+    display: none;
+  }
+}
+/* Hidding the carousel below 630px */
+@media screen and (max-width :630px){
+ #carousel-content{
+    display: none;
+  }
+}

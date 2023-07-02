@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <header>
+    <!-- Header alphabetical search navigation -->
+    <div class="search-alphabetically">
+      <ul>
+        <li>
+          <a href="" data-char="A">A</a>
+        </li>
+        <li>
+          <a href="" data-char="B">B</a>
+        </li>
+        <li>
+          <a href="" data-char="C">C</a>
+        </li>
+        <li>
+          <a href="" data-char="D">D</a>
+        </li>
+        <li>
+          <a href="" data-char="E">E</a>
+        </li>
+        <li>
+          <a href="" data-char="F">F</a>
+        </li>
+        <li>
+          <a href="" data-char="G">G</a>
+        </li>
+        <li>
+          <a href="" data-char="H">H</a>
+        </li>
+        <li>
+          <a href="" data-char="I">I</a>
+        </li>
+        <li>
+          <a href="" data-char="J">J</a>
+        </li>
+        <li>
+          <a href="" data-char="K">K</a>
+        </li>
+        <li>
+          <a href="" data-char="L">L</a>
+        </li>
+        <li>
+          <a href="" data-char="M">M</a>
+        </li>
+        <li>
+          <a href="" data-char="N">N</a>
+        </li>
+        <li>
+          <a href="" data-char="O">O</a>
+        </li>
+        <li>
+          <a href="" data-char="P">P</a>
+        </li>
+        <li>
+          <a href="" data-char="Q">Q</a>
+        </li>
+        <li>
+          <a href="" data-char="R">R</a>
+        </li>
+        <li>
+          <a href="" data-char="S">S</a>
+        </li>
+        <li>
+          <a href="" data-char="T">T</a>
+        </li>
+        <li>
+          <a href="" data-char="U">U</a>
+        </li>
+        <li>
+          <a href="" data-char="V">V</a>
+        </li>
+        <li>
+          <a href="" data-char="W">W</a>
+        </li>
+        <li>
+          <a href="" data-char="X">X</a>
+        </li>
+        <li>
+          <a href="" data-char="Y">Y</a>
+        </li>
+        <li>
+          <a href="" data-char="Z">Z</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Header navigation bar -->
+    <nav class="navbar navbar-expand-md bg">
+      <!-- Website Logo -->
+      <a href="" class="navbar-brand fs-3 ms-3">
+        <img src="./assets/images/logo.png" alt="Healthy Food Logo Png @clipartmax.com" />
+      </a>
+      <!-- Collapsable button -->
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+        <i class="bx bx-menu-alt-right bx-md"></i>
+      </button>
+      <!-- Navigation Home button -->
+      <div class="collapse navbar-collapse text-center" id="btn">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="" class="nav-link mx-3 fs-3">Home</a>
+          </li>
+          <!-- Navigation Favorite icon -->
+          <li class="nav-item">
+            <a href="./favorites.html">
+              <i class='bx bx-bookmark-heart' style='color:#ff0000'></i>
+            </a>
+          </li>
+          <!-- Navigation search input -->
+          <li>
+            <input class="form-control me-2 fs-5 my-2 input text-center" type="search" placeholder="Search"
+              aria-label="Search" id="search-input" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Auto swipable carousel container -->
+    <div id="carousel-content" class="carousel slide hidden" data-bs-ride="carousel">
+      <!-- Carousel slider indicator -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <!-- Carosuel images container -->
+      <div class="carousel-inner" id="carousel-ele">
+        <div class="carousel-item active" data-bs-interval="2000" id="firstCarousel">
+          <img src="" class="d-block w-100" alt="" />
+          <div class="carousel-caption d-md-block">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel next and previous buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next text-white" type="button" data-bs-target="#carousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <!-- Website main body -->
+  <main>
+    <!-- Loader to be shown when user lands on main page -->
+    <div class="loader-container">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <!-- Main body content container -->
+    <div class="main-content d-flex justify-content-center">
+      <!-- Main body data container -->
+      <div class="container-fluid" id="data-container"></div>
+      <!-- Search and alphabetical navigation data container -->
+      <div class="container-fluid hidden" id="search-container"></div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/index-script.js"></script>
+</body>
+
+</html>

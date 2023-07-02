@@ -1,0 +1,177 @@
+/* Common CSS used in project */
+* {
+  box-sizing: border-box;
+}
+
+/* Main body background color */
+body {
+  background-color: rgb(240, 248, 218);
+}
+
+/* Fonts used in headings, anchor tag, paragraphs */
+h5,
+p,
+h2,
+h4,
+h3,
+a,
+.nav-item a,
+.search-btn {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Alphabetical search nav header css */
+.search-alphabetically {
+  background-color: grey;
+  padding: 1em 0 0.1em 0;
+  margin: 0.1em;
+  border-radius: 15px 15px;
+}
+
+.search-alphabetically ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-alphabetically ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.search-alphabetically ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+
+/* Navigation bar and buttons CSS */
+/* Padding for navbar */
+.navbar {
+  padding: 0.1em 1.2em 0.1em 0.1em;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 80px;
+}
+
+.nav-item a i {
+  font-size: 3.5em;
+  padding-right: .4em;
+}
+
+/* Meals card and container CSS */
+/* Meals container css */
+.meal-container p {
+  text-overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+
+/* Favorite icon position */
+.favorite-container i {
+  float: right;
+}
+
+/*Favorite icon color when user has saved meal as favorite*/
+.bookmark {
+  color: red
+}
+
+/* Card css alignment */
+.card {
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.card div {
+  justify-content: space-between;
+}
+
+/* Card image alignment and dimensions */
+.image {
+  height: 220px;
+  width: 180px;
+  padding: 0.1em;
+  border-radius: 15px;
+}
+
+.card div {
+  height: 250px;
+  width: 180px;
+}
+
+/* Cursor css when user hover Favorite icon or on card to click for details */
+.favorite-container i {
+  cursor: pointer;
+}
+
+.meal-container:hover {
+  cursor: pointer;
+}
+
+#data-container h2 {
+  padding-top: 4em;
+  padding-left: 6em;
+}
+/* Meal card favorite icon css  */
+.favorite-container, .card div{
+  z-index: 1;
+ }
+
+.card:hover::before {
+  content: '';
+  position: absolute;
+  height: 300px;
+  width: 200px;  
+  border-radius: 8px;
+  background-image: linear-gradient(180deg,#e2ddf3,#d5e1c4, #f6d7d5);
+  /* transform: rotate(-90deg) scaleX(1.34) scaleY(0.77); */
+
+  animation: circularBorder .5s linear ; 
+   transition: all 0.2s linear;
+}
+
+ @keyframes circularBorder {
+  from {
+    transform: rotate(180deg) scaleX(0.89) scaleY(0.57);
+  }
+  to{
+    transform: rotate(0deg);  
+  }
+}
+
+/* Common media query for responsiveness */
+/* Hidding the alphabetical navbar below 700px */
+@media screen and (max-width :700px) {
+  div.search-alphabetically {
+    display: none;
+  }
+}
+
+/* Reducing search input width at lower screen size */
+@media screen and (max-width :767px) {
+  .navbar-nav li input {
+    margin: 2.8em;
+    width: 80vw;
+  }
+}
