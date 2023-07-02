@@ -53,7 +53,7 @@ Contributions are welcome! If you'd like to contribute to the Meal App, please f
 2. Create a new branch: `git checkout -b feature/my-feature`
 3. Make your changes and commit them: `git commit -m "Add a new feature"`
 
-###Preview
+##Preview
 ## Home page with carousel
 ![Homepage with carousel](https://github.com/sushildahiya/food_chef/assets/97718833/74a0423c-18ec-4422-8b59-58d88b530843)
 
