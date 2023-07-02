@@ -132,6 +132,7 @@ async function clickOnViewMore(event) {
     for (let i = 0; i < data.meals.length; i++) {
       createCard(data.meals[i], searchConatiner);
     }
+    detailPageClickEvent();
   }
 }
 /**Handles the event when user clicks on favorite icon to add or remove meal from favorite */
