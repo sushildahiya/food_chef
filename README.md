@@ -1,4 +1,4 @@
-# Food_chef App
+# Food Chef App
 
 Welcome to the Food Chef App repository! This project is a web application that allows users to explore and save their favorite meals. It uses the MealDB API to fetch meal data and provides various features for interacting with the meals.
 
