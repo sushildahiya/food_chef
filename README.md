@@ -53,3 +53,18 @@ Contributions are welcome! If you'd like to contribute to the Meal App, please f
 2. Create a new branch: `git checkout -b feature/my-feature`
 3. Make your changes and commit them: `git commit -m "Add a new feature"`
 
+###Preview
+## Home page with carousel
+![Homepage with carousel](https://github.com/sushildahiya/food_chef/assets/97718833/74a0423c-18ec-4422-8b59-58d88b530843)
+
+## Details Page
+![Details page](https://github.com/sushildahiya/food_chef/assets/97718833/286e2cda-e3d3-4270-a5c4-c620c79ce908)
+
+##Search a meal
+![Search a meal](https://github.com/sushildahiya/food_chef/assets/97718833/7bc93510-060f-473f-a693-3ea88fce341a)
+
+##Favorites page
+![Favorites page](https://github.com/sushildahiya/food_chef/assets/97718833/d31d1301-8df2-41d0-b33e-ad10734c9aca)
+
+
+
