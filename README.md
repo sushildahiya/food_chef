@@ -25,7 +25,7 @@ Welcome to the Food Chef App repository! This project is a web application that 
 
 To run the Meal App locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/sushildahiya/food_chef`
+1. Clone the repository: `https://github.com/sushildahiya/food_chef.git`
 2. Open the project directory: `cd food_chef`
 3. Open the `index.html` file in your preferred web browser.
 
